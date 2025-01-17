@@ -68,3 +68,7 @@ body{
         color: var(--Rose-800);
     
      }
+
+     .section-2-div ul{
+        padding: 0 26px;
+     }
