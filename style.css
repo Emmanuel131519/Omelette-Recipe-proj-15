@@ -27,7 +27,7 @@ body {
 /* utils */
 .container {
   max-width: 90%;
-  margin: auto;
+  margin: 0 auto;
   padding: 0 1rem;
 }
 
@@ -183,6 +183,15 @@ tbody{
 font-family: var(--ff-Outfit);
 }
 
+/* .border-bottom{
+  border-bottom: 2px solid var(--Stone-100);
+ ;
+} */
+
+tbody tr:not(:last-child) td{
+  border-bottom: 2px solid var(--Stone-100);
+}
+
 table td{
     padding: 20px 30px;
 }
@@ -190,4 +199,41 @@ table td{
 td strong{
     font-weight: 700;
     color: var(--Brown-800);
+}
+
+@media(min-width:768px){
+
+  body{
+    background-color: var(--Stone-100);
+  }
+
+  main{
+    max-width: 70%;
+    margin: 30px 0;
+    background-color: var(--White);
+    padding: 25px;
+    border-radius: 10px;
+  }
+
+  /* utils */
+
+  .container{
+    max-width: 100%;
+  }
+
+  .section-1{
+    max-width: 100%;
+    padding: 0 1rem;
+    margin: 0 auto;
+  }
+
+  .section-1 img{
+    border-radius:10px;
+  }
+}
+
+@media(min-width:1024px){
+  main{
+    max-width: 50%;
+  }
 }
